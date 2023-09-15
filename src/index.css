@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.root {
+  margin: 0;
+  padding: 0;
+}
+
+.animate-swing {
+  animation: swing 1s infinite;
+}
+
+@keyframes swing {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
