@@ -10,7 +10,8 @@ export default {
         secondary: "rgb(255,191,67)"
       },
       fontFamily: {
-        roman: "Times New Roman"
+        roman: "Times New Roman",
+        poppins: "Poppins"
       },
       backgroundImage: {
       },
