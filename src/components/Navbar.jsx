@@ -22,7 +22,8 @@ const Navbar = () => {
                     <div className="text-primary basis-full">
                         <NavLinks />
                     </div>
-                </>}
+                </>
+            }
         </div>
     )
 }
