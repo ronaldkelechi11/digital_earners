@@ -11,12 +11,12 @@ const Navbar = () => {
     }
 
     return (
-        <div className='h-1/3 p-2 flex flex-wrap items-center justify-between'>
-            <div className="text-white w-[50px] h-[50px]"><img src="/src/assets/logo.JPG" alt="" /></div>
+        <div className='h-1/3 p-2 flex sticky top-0 bg-white flex-wrap items-center justify-between'>
+            <NavLink reloadDocument className="text-white w-[50px] h-[50px]"><img src="/src/assets/logo.JPG" alt="" /></NavLink>
             <div className="hidden md:flex flex-row gap-5 text-primary">
                 <NavLinks />
             </div>
-            <div className="md:hidden p-2 transition-all cursor-pointer" onClick={toggleNav}>{isOpen ? <FaX /> : <AiOutlineMenu />}</div>
+            <div className="md:hidden p-2 transition-all cursor-pointer text-primary" onClick={toggleNav}>{isOpen ? <FaX /> : <AiOutlineMenu color='currentColor' />}</div>
             {isOpen &&
                 <>
                     <div className="text-primary basis-full">
@@ -39,5 +39,6 @@ function NavLinks() {
         </div>
     )
 }
+
 
 export default Navbar
